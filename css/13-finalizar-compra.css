@@ -1,0 +1,194 @@
+.list-dados-comprador {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin: 20px 0 52px 0;
+}
+.dados-comprador {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+}
+.dados-comprador::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: #f7f7f7;
+  bottom: -16px;
+}
+.dados-comprador img {
+  width: 20px;
+  align-self: self-start;
+}
+.icon-texto {
+  display: flex;
+  gap: 20px;
+}
+.icon-texto span {
+  font-size: 0.875rem;
+  color: #404040;
+  font-family: fira sans, arial;
+}
+.dados-comprador a {
+  text-align: right;
+  font-family: roboto, arial;
+  font-size: 0.875rem;
+  color: #404040;
+}
+.pag-selecionar input:not(.submenu input) {
+  visibility: hidden;
+  display: none;
+}
+.pag-selecionar .envio-button span {
+  text-transform: none;
+  font-weight: 500;
+  color: #0e0e0e;
+}
+
+.pag-selecionar .envio-button {
+  padding: 22px 20px;
+  border-radius: 8px;
+  border: #404040 solid 1px;
+  margin-bottom: 0px;
+  margin-top: 12px;
+}
+.pag-selecionar .submenu {
+  gap: 12px;
+  margin: 0px;
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 20px 40px;
+  background-color: #f7f7f7 !important;
+  border: 1px solid #e1e1e1;
+}
+.parcelas input {
+  display: none;
+  visibility: hidden;
+}
+.vencimento {
+  display: flex;
+  gap: 8px;
+}
+.vencimento input {
+  width: 100%;
+}
+.parcelas .envio-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px !important;
+}
+.pag-selecionar .submenu input,
+.parcelas .envio-button {
+  height: 40px;
+  padding: 0;
+  border-radius: 4px;
+  background-color: #fff;
+  margin: 0px;
+}
+.parcelas .envio-button span {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.parcelas .submenu {
+  padding: 0px;
+  gap: 0px;
+}
+.parcelas .submenu li {
+  margin: 0;
+  padding: 12px 8px;
+  font-family: fira sans, arial;
+  font-size: 0.875rem;
+  background-color: #e9e9e9;
+  cursor: pointer;
+}
+.parcelas .submenu li:hover {
+  background-color: #c9c9c9;
+}
+
+.cartoes-aceitos {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+.cartoes-aceitos span {
+  color: #0e0e0e;
+  font-weight: 500 !important;
+  font-family: fira sans;
+}
+
+.list-cartoes {
+  display: flex;
+  gap: 8px;
+}
+.list-cartoes img {
+  width: 36px;
+}
+.pix-info {
+  display: flex;
+  flex-direction: column;
+}
+.pix-info span,
+.qr-info span {
+  color: #0e0e0e;
+  font-weight: 500 !important;
+  font-family: fira sans;
+}
+.qr-icon {
+  width: 20px;
+}
+.qr-info {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+.entrega-10 {
+  margin-bottom: 32px;
+  position: relative;
+}
+.entrega-10::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  background-color: #f7f7f7;
+  bottom: -206px;
+}
+
+.sugestao-p {
+  font-weight: 500;
+  font-family: fira sans, arial;
+  color: #ff00a4;
+  font-size: 0.875rem;
+}
+.sugestao {
+  height: 100px;
+}
+.cel-envio {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+.cel-envio p:not(.popup-c) {
+  font-weight: 500;
+  font-family: fira sans, arial;
+  color: #ff00a4;
+  font-size: 0.875rem;
+}
+.cel-envio input {
+  min-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .pag-selecionar .submenu:not(.parcelas .submenu) {
+    padding: 20px;
+  }
+}
+@media (max-width: 670px) {
+  .pag-selecionar .submenu:not(.parcelas .submenu) {
+    padding: 20px;
+  }
+}

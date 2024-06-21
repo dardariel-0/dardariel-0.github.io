@@ -30,7 +30,7 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-image: url("/img/chevron-down.svg");
+  background-image: url("/img/icones/chevron-down.svg");
   position: absolute;
   transition: 0.3s ease;
   left: 104px;
@@ -41,7 +41,7 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  background-image: url("/img/chevron-down.svg");
+  background-image: url("/img/icones/chevron-down.svg");
   position: absolute;
   transition: 0.3s ease;
   left: 146px;

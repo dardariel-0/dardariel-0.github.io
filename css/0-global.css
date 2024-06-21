@@ -3,11 +3,7 @@ html {
 }
 body {
   margin: 0px;
-  color: #141414;
-  background-color: #dedede;
-}
-span {
-  font-family: roboto, arial;
+  background-color: var(--cor-04);
 }
 
 h1,
@@ -38,11 +34,11 @@ h2 {
 .button {
   margin-top: 18px;
   width: 100%;
-  font-family: Josefin sans, arial, sans-serif;
+  font-family: "Josefin sans", arial, sans-serif;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #0e0e0e;
+  color: var(--cor-01);
   padding: 10px 0;
   text-align: center;
   background-image: linear-gradient(#ff00a4, #ca0082);
@@ -56,5 +52,5 @@ h2 {
 }
 input::placeholder {
   padding-left: 8px;
-  color: #939393;
+  color: var(--cor-08);
 }

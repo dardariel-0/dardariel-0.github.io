@@ -1,5 +1,5 @@
 .main-entrega {
-  background-color: #fff;
+  background-color: var(--cor-01);
   justify-items: center;
   display: grid;
 }
@@ -12,7 +12,7 @@
   gap: 24px;
 }
 .form-final {
-  background-color: #fff;
+  background-color: var(--cor-01);
   display: grid;
   padding-top: 20px;
   margin: 0 20px;
@@ -22,9 +22,7 @@
   margin-left: -24px;
 }
 .form-final h2 {
-  text-transform: uppercase;
-  color: #ff00a4;
-  font-size: 1rem;
+  color: var(--cor-s2);
   margin-bottom: 16px;
 }
 .check-entrega {
@@ -34,9 +32,7 @@
   margin: 10px 0;
 }
 .check-entrega span {
-  font-size: 0.875rem;
-  color: #717171;
-  font-family: fira sans, arial;
+  color: var(--cor-09);
 }
 .form-final [type="email"] {
   min-width: 332px;
@@ -53,7 +49,7 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  background-color: #f7f7f7;
+  background-color: var(--cor-03);
   bottom: -12px;
 }
 .envio-type {
@@ -69,18 +65,17 @@
 .change-cep {
   text-transform: uppercase;
   text-align: center;
-  font-family: fira sans, arial;
   letter-spacing: 0.5px;
-  font-size: 0.875rem;
-  color: #0e0e0e;
+  color: var(--cor-12);
   padding: 6px;
-  border: #717171 solid 1px;
+  border: var(--cor-08) solid 1px;
   border-radius: 4px;
   max-width: 200px;
 }
 .change-cep:hover {
-  background-color: #0e0e0e;
-  color: #fff;
+  background-color: var(--cor-12);
+  color: var(--cor-01);
+  border-color: var(--cor-12);
 }
 .entrega-2-container {
   display: flex;
@@ -103,21 +98,15 @@
   flex-direction: column;
 }
 .transport p {
-  font-family: fira sans, arial;
-  font-size: 1rem;
-  color: #0e0e0e;
+  color: var(--cor-12);
 }
 .transport span {
-  font-size: 0.875rem;
-  color: #404040;
-  font-family: fira sans, arial;
+  color: var(--cor-09);
 }
 .preco-entrega {
   align-self: center;
   justify-self: end;
-  font-size: 0.975rem;
-  color: #0e0e0e;
-  font-family: fira sans, arial;
+  color: var(--cor-12);
 }
 .form-destinatario {
   display: flex;
@@ -139,11 +128,11 @@
   max-width: 100%;
   min-height: 30px;
   border-radius: 8px;
-  border: 1px solid #0e0e0e;
+  border: 1px solid var(--cor-12);
 }
 
 .input-duo:hover {
-  border: 1px solid #ca0082;
+  border: 1px solid var(--cor-s2);
 }
 .cobranca {
   margin-bottom: 40px;
@@ -166,9 +155,9 @@
 .popup-c {
   max-width: 30ch;
   font-size: 0.675rem;
-  font-family: fira sans, arial;
+  font-family: "Fira Sans", arial;
   font-weight: 400;
-  background-color: #f7f7f7;
+  background-color: var(--cor-03);
   padding: 10px;
   border-radius: 4px;
   display: inline-block;
@@ -198,17 +187,15 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  background-color: #f7f7f7;
+  background-color: var(--cor-01);
   top: -22px;
 }
 .list-end-entrega a {
-  font-family: roboto, arial;
-  font-size: 0.875rem;
-  color: #ff00a4;
+  color: var(--cor-s2);
   text-decoration: underline;
 }
 .list-end-entrega a:hover {
-  color: #404040;
+  color: var(--cor-12);
 }
 
 /* Coluna 2 */
@@ -218,9 +205,7 @@
   padding-top: 10px;
 }
 .item-final-compra h2 {
-  text-transform: uppercase;
-  color: #404040;
-  font-size: 1rem;
+  color: var(--cor-12);
   margin-bottom: 16px;
   display: none;
 }
@@ -231,13 +216,11 @@
   width: 2px;
   height: 96%;
   position: absolute;
-  background-color: #f7f7f7;
+  background-color: var(--cor-03);
   left: -32px;
   top: 32px;
 }
-.main-entrega .product-card h3 {
-  font-size: 1rem;
-}
+
 .final-item-img {
   max-width: 120px;
   cursor: pointer;
@@ -272,11 +255,8 @@
   width: 100%;
   height: 2px;
   position: absolute;
-  background-color: #f7f7f7;
+  background-color: var(--cor-03);
   top: -40px;
-}
-.price-2 {
-  font-size: 1.5rem;
 }
 
 @media (max-width: 1250px) {

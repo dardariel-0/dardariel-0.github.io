@@ -52,7 +52,7 @@ header input:not(.input-cep, .button) {
   display: inline-block;
   width: 16px;
   height: 16px;
-  background-image: url("/img/chevron-down.svg");
+  background-image: url("/img/icones/chevron-down.svg");
   position: absolute;
   right: -20px;
 }

@@ -131,9 +131,9 @@
                   <span>R$ 140,00</span>
                 </div>
 
-                <div class="formas-envio">
+                <div class="select-option-drop">
                   <input id="check-envio" type="checkbox" name="menu" />
-                  <label class="envio-button" for="check-envio">
+                  <label class="open-option" for="check-envio">
                     <img src="/img/envio.svg" alt="">
                     <span class="envio-title">formas de envio</span>
                     <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
@@ -171,149 +171,212 @@
   </header>
 
 
-  <main class="main-product">
+  <main class="main-product" id="select">
     <div class="main-product-content">
       <section class="product-session">
 
         <div class="photos">
-          <div class="main-photo"><img src="/select-product/img/main-photo.png" alt=""></div>
-          <ul class="photos-list">
-            <li class="foco-img"><img src="/select-product/img/list-1.png" alt=""></li>
-            <li><img src="/select-product/img/list-2.png" alt=""></li>
-            <li><img src="/select-product/img/list-3.png" alt=""></li>
-          </ul>
+          <img src="/img/galeria/list-1.png" alt="">
+          <img src="/img/galeria/list-2.png" alt="">
+          <img src="/img/galeria/list-3.png" alt="">
+          <img src="/img/galeria/list-1.png" alt="">
+
         </div>
+
         <div class="product-informacoes">
           <ul class="breadcrumb">
             <li><a class="crumb" href="/index.html">Início</a></li>
             <li><a class="crumb" href="/index.html">Destaques</a></li>
             <li>Jaqueta Bomber - Kyyyoto</li>
           </ul>
-          <h1>jaqueta bomber - kyyyoto</h1>
-          <span class="price">R$ 140,00</span>
+          <h1 class="font-1-g1">jaqueta bomber - kyyyoto</h1>
+          <span class="price font-2-gg">R$ 140,00</span>
           <div class="lists-size-color">
+
+
             <div class="tamanho-list">
-              <span>tamanho</span>
-              <div class="dropdown">
-                <button class="drop-button">PP</button>
-                <ul class="dropdown-content">
-                  <li>PP</li>
-                  <li>P</li>
-                  <li>M</li>
-                  <li>G</li>
-                  <li>GG</li>
-                  <li>XG</li>
-                  <li>XXL</li>
+
+              <span class="font-2-g1">Tamanho</span>
+              <div class="custom-select">
+
+                <button class="select-button" aria-expanded="false" aria-controls="select-dropdown">
+                  <span class="selected-value">Selecionar tamanho</span>
+                  <img class="img" src="/img/icones/chevron-down.svg" alt="">
+                </button>
+
+                <ul class="select-dropdown font-2-g" id="select-dropdown">
+                  <li>
+                    <input type="radio" id="size-pp" name="social-account" />
+                    <label for="size-pp">PP</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size-p" name="social-account" />
+                    <label for="size-p">P</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size-m" name="social-account" />
+                    <label for="size-m">M</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size-g" name="social-account" />
+                    <label for="size-g">G</label>
+                  </li>
+
                 </ul>
+
               </div>
             </div>
+
             <div class="tamanho-list">
-              <span class="cor-tamanho-list">Cor</span>
-              <div class="dropdown">
-                <button class="drop-button">Rosa</button>
-                <ul class="dropdown-content">
-                  <li>Rosa</li>
-                  <li>Preto</li>
-                  <li>Branco</li>
+              <span class="font-2-g1">Cor</span>
+
+              <div class="custom-select">
+
+                <button class="select-button font-2-g" aria-expanded="false" aria-controls="select-dropdown">
+                  <span class="selected-value">Rosa</span>
+                  <img class="img" src="/img/icones/chevron-down.svg" alt="">
+                </button>
+
+                <ul class="select-dropdown font-2-g" id="select-dropdown">
+                  <li>
+                    <input type="radio" id="size-pp" name="social-account" />
+                    <label for="size-pp">PP</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size-p" name="social-account" />
+                    <label for="size-p">P</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size-m" name="social-account" />
+                    <label for="size-m">M</label>
+                  </li>
+                  <li>
+                    <input type="radio" id="size-g" name="social-account" />
+                    <label for="size-g">G</label>
+                  </li>
 
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="group-infos-compra">
-            <a href="/error/error.html">
-              <div class="medidas-div"><img src="/select-product/img/regua.svg" alt=""><span>Guia de medidas</span></div>
-            </a>
-            <input class="button" type="submit" value="comprar" id="">
-            <div class="formas-envio">
-              <input id="check-envio-p" type="checkbox" name="menu" />
-              <label class="envio-button" for="check-envio-p">
-                <img src="/img/envio.svg" alt="">
-                <span class="envio-title">formas de pagamento</span>
-                <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
-              </label>
-              <ul class="submenu">
-                <li>
-                  <p>Correios</p> <span>R$29,90</span>
-                </li>
-                <li>
-                  <p>Sedex</p><span>R$19,90</span>
-                </li>
-              </ul>
+
+
+
+            <!-- <div class="tamanho-list">
+              <span class="cor-tamanho-list font-2-g1">Cor</span>
+              <div class="dropdown">
+                <button class="drop-button font-2-g">Rosa</button>
+                <ul class="dropdown-content font-2-g">
+                  <li>Rosa</li>
+                  <li>Preto</li>
+                  <li>Branco</li>
+                </ul>
+              </div>
+            </div> -->
+
+            <div class="group-infos-compra">
+              <a href="/error/error.html">
+                <div class="medidas-div"><img src="/img/icones/regua.svg" alt=""><span class="font-2-g1">Guia de medidas</span></div>
+              </a>
+              <input class="button" type="submit" value="comprar" id="">
+
+              <div class="select-option-drop">
+                <button class="open-option" aria-expanded="false" aria-controls="open1">
+                  <img src="/img/icones/envio.svg" alt="">
+                  <span class="envio-title font-1-m">formas de envio</span>
+                  <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
+                </button>
+
+                <div id="open1" class="options">
+                  <input type="radio" id="sedex" name="tipo" value="sedex">
+                  <label for="sedex" class="font-2-g">
+                    <p>Sedex</p> <span>R$19,90</span>
+                  </label>
+
+                  <input type="radio" id="correios" name="tipo" value="correios">
+                  <label for="correios" class="font-2-g">
+                    <p>Correios</p> <span>R$29,90</span>
+                  </label>
+                </div>
+
+              </div>
+
+              <div class="select-option-drop">
+                <button class="open-option" aria-expanded="false" aria-controls="open2">
+                  <img src="/img/icones/cartao1.svg" alt="">
+                  <span class="envio-title font-1-m">formas de pagamento</span>
+                  <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
+                </button>
+                <div id="open2" class="options">
+                  <input type="radio" id="cartao" name="tipo" value="cartao">
+                  <label for="cartao" class="font-2-g">
+                    <p>Cartão de crédito</p> <span>em até 12x</span>
+                  </label>
+
+                  <input type="radio" id="pix" name="tipo" value="pix">
+                  <label for="pix" class="font-2-g">
+                    Pix
+                  </label>
+                </div>
+
+              </div>
             </div>
-            <div class="formas-envio">
-              <input id="check-envio-p2" type="checkbox" name="menu" />
-              <label class="envio-button" for="check-envio-p2">
-                <img src="/img/envio.svg" alt="">
-                <span class="envio-title">formas de envio</span>
-                <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
-              </label>
-              <ul class="submenu">
-                <li>
-                  <p>Correios</p> <span>R$29,90</span>
-                </li>
-                <li>
-                  <p>Sedex</p><span>R$19,90</span>
-                </li>
-              </ul>
-            </div>
+
+            <ul class="caracteristicas-produto font-2-g1">
+              <li>Super Soft, premium poliester</li>
+              <li>Sublimado com tinta a base de água</li>
+              <li>Exterior a prova d'água</li>
+              <li>Unissex</li>
+              <li>Produção sob encomenda</li>
+            </ul>
           </div>
-          <ul class="caracteristicas-produto">
-            <li>Super Soft, premium poliester</li>
-            <li>Sublimado com tinta a base de água</li>
-            <li>Exterior a prova d'água</li>
-            <li>Unissex</li>
-            <li>Produção sob encomenda</li>
-          </ul>
-        </div>
       </section>
     </div>
   </main>
   <div class="separador">
     <div class="letreiro-slide">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
-      <img src="/img/konda-letreiro-3.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
+      <img src="/img/separador/konda-letreiro.svg" alt="">
     </div>
   </div>
   <section class="destaques">
     <section>
       <a class="destaques-item" href="/selecionar-item/selecionar-item.html">
-        <img class="img-item" src="/select-product/img/pr-1.png" alt="Jaqueta Bomber">
-        <span class="nome-item">Jaqueta Bomber - Sailor Moon</span>
-        <span class="preco">R$ 160,00</span>
+        <img class="img-item" src="/img/relacionados/pr-1.png" alt="Jaqueta Bomber">
+        <span class="nome-item font-2-mb">Jaqueta Bomber - Sailor Moon</span>
+        <span class="preco font-2-m">R$ 160,00</span>
       </a>
     </section>
     <section>
       <a class="destaques-item" href="/">
-        <img class="img-item" src="/select-product/img/pr-2.png" alt="Tshirt Cyber">
-        <span class="nome-item">Jaqueta Bomber - Divino</span>
-        <span class="preco">R$ 140,00</span>
+        <img class="img-item" src="/img/relacionados/pr-2.png" alt="Tshirt Cyber">
+        <span class="nome-item font-2-mb">Jaqueta Bomber - Divino</span>
+        <span class="preco font-2-m">R$ 140,00</span>
       </a>
     </section>
     <section>
-      <a class="destaques-item" href="/"><img class="img-item" src="/select-product/img/pr-3.png" alt="Jaqueta Bomber">
-        <span class="nome-item">Jaqueta Bomber - Koy</span>
-        <span class="preco">R$ 185,00</span>
+      <a class="destaques-item" href="/"><img class="img-item" src="/img/relacionados/pr-3.png" alt="Jaqueta Bomber">
+        <span class="nome-item font-2-mb">Jaqueta Bomber - Koy</span>
+        <span class="preco font-2-m">R$ 185,00</span>
       </a>
     </section>
     <section>
-      <a class="destaques-item" href="/"><img class="img-item" src="/select-product/img/pr-4.png" alt="Jaqueta Bomber">
-        <span class="nome-item">Jaqueta Bomber - Emperor</span>
-        <span class="preco">R$ 140,00</span>
+      <a class="destaques-item" href="/"><img class="img-item" src="/img/relacionados/pr-4.png" alt="Jaqueta Bomber">
+        <span class="nome-item font-2-mb">Jaqueta Bomber - Emperor</span>
+        <span class="preco font-2-m">R$ 140,00</span>
       </a>
     </section>
   </section>
@@ -365,6 +428,8 @@
     </div>
 
   </footer>
+  <script src="/js/select-open.js"></script>
+  <script src="/js/select-drop.js"></script>
 </body>
 
 </html>

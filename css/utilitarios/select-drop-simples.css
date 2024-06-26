@@ -1,0 +1,35 @@
+.drop-simple {
+  width: 100%;
+  height: 28px;
+  background-color: var(--cor-02);
+  border: 1px solid var(--cor-06);
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Remove seta padrão do FireFox */
+  text-overflow: "";
+}
+.drop-simple option {
+  background-color: aqua;
+  height: 28px;
+  padding: 20px;
+}
+
+/* Remove seta padrão do FireFox */
+.div-select select::-ms-expand {
+  display: none;
+}
+/* Remove seta padrão do IE*/
+
+#appearance-select {
+  -webkit-appearance: none;
+  /* Remove estilo padrão do Chrome */
+  -moz-appearance: none;
+  /* Remove estilo padrão do FireFox */
+  appearance: none;
+  /* Remove estilo padrão do FireFox*/
+  background-position: 218px center;
+  height: 30px;
+}

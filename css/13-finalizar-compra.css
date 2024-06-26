@@ -39,13 +39,13 @@
   visibility: hidden;
   display: none;
 }
-.pag-selecionar .envio-button span {
+.pag-selecionar .open-option span {
   text-transform: none;
   font-weight: 500;
   color: var(--cor-12);
 }
 
-.pag-selecionar .envio-button {
+.pag-selecionar .open-option {
   padding: 22px 20px;
   border-radius: 8px;
   border: var(--cor-10) solid 1px;
@@ -72,13 +72,13 @@
 .vencimento input {
   width: 100%;
 }
-.parcelas .envio-button {
+.parcelas .open-option {
   display: flex;
   justify-content: space-between;
   padding: 0px 8px !important;
 }
 .pag-selecionar .submenu input,
-.parcelas .envio-button {
+.parcelas .open-option {
   height: 40px;
   padding: 0;
   border-radius: 4px;

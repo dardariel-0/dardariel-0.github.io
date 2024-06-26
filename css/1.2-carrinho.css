@@ -127,46 +127,6 @@ input:checked ~ .slide-carrinho {
   background-color: var(--cor-04);
   top: 52px;
 }
-
-.envio-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 12px;
-  cursor: pointer;
-}
-.envio-title {
-  color: var(--cor-12);
-  letter-spacing: 0.5px !important;
-  width: 100%;
-}
-.envio-button img {
-  width: 24px;
-}
-.chevron {
-  grid-column: 3;
-  transition: 0.3s ease;
-}
-input:checked ~ .envio-button .chevron {
-  transform: rotate(180deg);
-}
-
-.formas-envio .submenu li {
-  color: var(--cor-12);
-  background-color: var(--cor-02);
-  padding: 20px;
-  display: block;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.formas-envio .submenu li:hover {
-  background-color: var(--cor-04);
-  transition: 0.3s ease;
-}
-
 .input-cep {
   height: 44px;
   width: 100%;

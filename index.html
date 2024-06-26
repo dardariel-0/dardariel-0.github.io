@@ -22,9 +22,6 @@
               <ul class="dropdown-list font-1-pp">
                 <li><a href="/error/error.html">Camisas</a></li>
                 <li><a href="/error/error.html">Moletons</a></li>
-                <li><a href="/error/error.html">Regatas</a></li>
-                <li><a href="/error/error.html">Shorts</a></li>
-                <li><a href="/error/error.html">Acessórios</a></li>
                 <li><a href="/error/error.html">Prints</a></li>
               </ul>
             </div>
@@ -35,9 +32,9 @@
             <a class="link-title font-1-m" href="/">Lançamentos</a>
             <div class="dropdown-content">
               <ul class="dropdown-list font-1-pp">
-                <li><a href="/error/error.html">Drop JuJutsu Kaisen</a></li>
+                <li><a href="/error/error.html">Drop My Hero Academy</a></li>
                 <li><a href="/error/error.html">Drop Claymore</a></li>
-                <li><a href="/error/error.html">Doce Pesadelo | SleepWear</a></li>
+
               </ul>
             </div>
           </div>
@@ -57,9 +54,7 @@
             <ul class="submenu font-1-m1">
               <li><a href="/error/error.html">Camisas</a></li>
               <li><a href="/error/error.html">Moletons</a></li>
-              <li><a href="/error/error.html">Regatas</a></li>
-              <li><a href="/error/error.html">Shorts</a></li>
-              <li><a href="/error/error.html">Acessórios</a></li>
+
               <li><a href="/error/error.html">Prints</a></li>
             </ul>
           </div>
@@ -67,9 +62,9 @@
             <label class="toggle-title-2 font-1-m1-b" for="check02">lançamentos
             </label>
             <ul class="submenu font-1-m1">
-              <li><a href="/error/error.html">Drop JuJutsu Kaisen</a></li>
+              <li><a href="/error/error.html">Drop My Hero Academy</a></li>
               <li><a href="/error/error.html">Drop Claymore</a></li>
-              <li><a href="/error/error.html">Doce Pesadelo | SleepWear</a></li>
+
             </ul>
           </div>
 
@@ -131,25 +126,30 @@
                   <span class="font-2-gg">R$ 140,00</span>
                 </div>
 
-                <div class="formas-envio">
-                  <input id="check-envio" type="checkbox" name="menu" />
-                  <label class="envio-button" for="check-envio">
+
+                <div class="select-option-drop">
+                  <button class="open-option" aria-expanded="false" aria-controls="open1">
                     <img src="/img/icones/envio.svg" alt="">
                     <span class="envio-title font-1-m">formas de envio</span>
                     <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
-                  </label>
-                  <ul class="submenu font-2-g"">
-                    <li>
+                  </button>
+
+                  <div id="open1" class="options">
+                    <input type="radio" id="sedex" name="tipo" value="sedex">
+                    <label for="sedex" class="font-2-g">
+                      <p>Sedex</p> <span>R$19,90</span>
+                    </label>
+
+                    <input type="radio" id="correios" name="tipo" value="correios">
+                    <label for="correios" class="font-2-g">
                       <p>Correios</p> <span>R$29,90</span>
-                    </li>
-                    <li>
-                      <p>Sedex</p><span>R$19,90</span>
-                    </li>
-                  </ul>
+                    </label>
+                  </div>
+
                 </div>
 
                 <div class=" cep"> <input class="input-cep" type="number" placeholder="CEP">
-                    <a class="font-2-g" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a>
+                  <a class="font-2-g" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a>
                 </div>
                 <div class="total">
                   <span class="font-1-g1">TOTAL:</span>
@@ -302,6 +302,7 @@
     </div>
 
   </footer>
+  <script src="/js/select-open.js"></script>
 </body>
 
 </html>

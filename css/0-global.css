@@ -50,7 +50,3 @@ h2 {
 .button:hover {
   background-image: linear-gradient(#ca0082, #ff00a4);
 }
-input::placeholder {
-  padding-left: 8px;
-  color: var(--cor-08);
-}

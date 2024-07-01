@@ -17,6 +17,10 @@
   align-items: center;
 }
 
+.pad-01 {
+  padding-right: 40px;
+}
+
 .custom-select img {
   width: 16px;
 }

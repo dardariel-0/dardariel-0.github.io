@@ -10,7 +10,7 @@
 .login-form {
   display: grid;
   gap: 20px;
-  background-color: #fff;
+  background-color: var(--cor-01);
   padding: 48px 0;
   max-width: 648px;
   width: 100%;
@@ -19,6 +19,10 @@
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
   margin-bottom: 32px;
   position: relative;
+}
+#login .input-line,
+#create-acc .input-line {
+  min-width: 332px;
 }
 .asset-1 {
   position: absolute;
@@ -47,22 +51,9 @@
   font-size: 1rem;
   justify-self: center;
 }
-.input-line {
-  display: grid;
-  gap: 4px;
-}
 
-.input-line input {
-  min-width: 332px;
-  max-width: max-content;
-  min-height: 30px;
-  border-radius: 8px;
-  border: 1px solid var(--cor-10);
-}
-.input-line:hover input {
-  border: 1px solid var(--cor-s3);
-}
 .forget {
+  margin-top: 10px;
   color: var(--cor-09);
   justify-self: end;
 }
@@ -118,13 +109,11 @@
   }
 }
 @media (max-width: 450px) {
-  .breadcrumb {
+  #login .breadcrumb,
+  #create-acc .breadcrumb {
     display: none;
   }
   .login-form {
     margin-top: 32px;
-  }
-  .input-line input {
-    min-width: 280px;
   }
 }

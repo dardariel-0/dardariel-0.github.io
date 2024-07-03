@@ -73,10 +73,14 @@
     justify-items: center;
     margin: 10px 5px;
   }
-  .nome-item {
-    font-size: 0.9rem;
-  }
+
   .preco {
     font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 400px) {
+  #collection .nome-item {
+    font-size: 0.75rem !important;
   }
 }

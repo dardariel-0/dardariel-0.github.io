@@ -49,7 +49,7 @@
             <li>
               <div class="dados-comprador">
                 <div class="icon-texto">
-                  <img src="/img/envio.svg" alt="">
+                  <img src="/img/icones/envio.svg" alt="">
                   <span>Chega segunda-feira 15/06 <br>PAC Promocional <br>R$ 25,00</span>
                 </div>
                 <a href="/error/error.html">Alterar</a>
@@ -66,27 +66,44 @@
                 <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
               </label>
               <div class="submenu">
-                <input type="number" placeholder="Número do cartão">
-                <input type="text" placeholder="Nome impresso no cartão">
+                <input type="text" id="numeroC" name="numeroC" placeholder="Número do cartão">
+                <input type="text" id="nomeC" name="nomeC" placeholder="Nome impresso no cartão">
 
                 <div class="vencimento">
-                  <input class="data-input" type="date" placeholder="Número do cartão">
-                  <input type="number" placeholder="CVV">
+                  <input class="data-input" id="dataC" name="dataC" type="date" placeholder="Número do cartão">
+                  <input type="text" id="cvv" name="cvv" placeholder="CVV">
                 </div>
 
-                <div class="parcelas">
-                  <input id="check-envio06" type="checkbox" name="menu" />
-                  <label class="open-option" for="check-envio06">
-                    <span>1x de R$165,00</span>
-                    <img class="chevron" src="/img/icones/chevron-down.svg" alt="">
-                  </label>
-                  <ul class="submenu">
-                    <li>1x de R$165,00 sem juros</li>
-                    <li>2x de R$82.50,00 sem juros</li>
-                    <li>10x de R$18,00 com juros</li>
-                    <li>12x de R$19,00 com juros</li>
+
+                <div class="custom-select parcelas">
+
+                  <button class="select-button" aria-expanded="false" aria-controls="select-dropdown">
+                    <span class="selected-value">Parcelas</span>
+                    <img class="img" src="/img/icones/chevron-down.svg" alt="">
+                  </button>
+
+                  <ul class="select-dropdown font-2-g" id="select-dropdown">
+                    <li>
+                      <input type="radio" id="1x" name="parcelas" />
+                      <label for="1x">1x de R$165,00 sem juros</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="2x" name="parcelas" />
+                      <label for="2x">2x de R$82,50 sem juros</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="10x" name="parcelas" />
+                      <label for="10x">10x de R$18,00 com juros</label>
+                    </li>
+                    <li>
+                      <input type="radio" id="12x" name="parcelas" />
+                      <label for="12x">12x de R$19,00 com juros </label>
+                    </li>
+
                   </ul>
+
                 </div>
+
                 <input type="number" placeholder="CPF ou CNPJ">
 
                 <div class="cartoes-aceitos">
@@ -122,8 +139,8 @@
 
 
           <div class="form-01 font-2-g">
-            <p class="sugestao-p">Novo por aqui? Me conta onde nos conheceu! Se já conquistamos seu coração, manda sua sugestão ou algo que quer que a gente faça!</p>
-            <input class="sugestao input-form-01 " type="text">
+            <p class="cor-s2">Novo por aqui? Me conta onde nos conheceu! Se já conquistamos seu coração, manda sua sugestão ou algo que quer que a gente faça!</p>
+            <textarea class="input-form-01 sugestao" rows="6" name="mensagem" id="mensagem"></textarea>
           </div>
           <div class="check-entrega font-2-g">
             <input type="checkbox"><span>Salvar dados para <strong>comprar mais rápido</strong>.</span>
@@ -149,14 +166,14 @@
       </section>
 
       <section class="item-final-compra">
-        <h2>Detalhes do pedido</h2>
+        <h2 class="font-1-m1 cor-s2">Detalhes do pedido</h2>
         <div class="product-card">
           <div class="product-card-img">
             <img class="final-item-img" src="/img/carrinho/jaqueta.png" alt="">
           </div>
           <img class="quantidade" src="/img/entrega/Group54.svg" alt="">
           <div class="product-card-infos">
-            <h3 class="font-1-g1">Jaqueta Bomber - Kyyyoto</h3>
+            <h3 class="font-1-g1">Jaqueta - Kyyyoto</h3>
             <div class="size-price">
               <span class="font-2-g1">GG</span>
               <span class="price font-2-g1">R$ 140,00</span>
@@ -245,6 +262,8 @@
     </div>
 
   </footer>
+  <script src="/js/select-open.js"></script>
+  <script src="/js/select-drop.js"></script>
 </body>
 
 </html>

@@ -5,6 +5,11 @@
   place-content: center;
 }
 
+.banner-new {
+  background-image: url("/img/banners/banner-1.jpg");
+  background-size: cover center;
+}
+
 .new-colection {
   max-width: 1200px;
   margin: 0 auto;
@@ -13,6 +18,10 @@
   justify-content: space-between;
   padding-bottom: 20px;
 }
+#collection .breadcrumb {
+  margin-bottom: 24px;
+}
+
 .new-colection .destaques-item {
   margin: 0;
 }
@@ -40,5 +49,8 @@
   }
   .new-colection .destaques-item {
     margin: 10px 0;
+  }
+  #collection .breadcrumb {
+    margin-bottom: 10px;
   }
 }

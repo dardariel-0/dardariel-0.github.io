@@ -4,10 +4,13 @@
   gap: 8px;
   margin-bottom: 12px;
   cursor: pointer;
-  width: 100%;
   text-align: left;
   border: none;
   background: none;
+}
+
+.open-option:not(.pag-selecionar .open-option) {
+  width: 100%;
 }
 .envio-title {
   color: var(--cor-12);
@@ -94,4 +97,18 @@
 .select-option-drop input:checked + label::before {
   border-color: var(--cor-09);
   box-shadow: inset 0 0 0 3px var(--cor-01), inset 0 0 0 5px var(--cor-12);
+}
+
+.pag-selecionar .open-option {
+  border-radius: 8px;
+  border: var(--cor-10) solid 1px;
+  margin-bottom: 0px;
+  margin-top: 12px;
+  padding: 20px;
+}
+
+.pag-selecionar .envio-title {
+  color: var(--cor-01);
+  letter-spacing: 0.5px !important;
+  width: 100%;
 }

@@ -8,6 +8,10 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
   <title>Konda</title>
 </head>
 
@@ -77,16 +81,19 @@
         <li><a href="/login/login.html" "><img src=" ./img/icones/icon-perfil.svg" alt="Perfil"></a></li>
 
         <li>
-          <label class="carrinho">
+          <div class="carrinho">
+            <input type="checkbox" id="check-car" class="close-car-button">
             <input type="checkbox" id="checkbox-car" name="car">
-            <label for="checkbox-car" class="icon-carrinho"><img src="./img/icones/icon-carrinho.svg" alt=""></label>
+            <label for="check-car" class="icon-carrinho"><img src="./img/icones/icon-carrinho.svg" alt=""></label>
 
             <div class="slide-carrinho">
-              <input type="checkbox">
-              <div class="toggle-car">
-                <span class="top-line common"></span>
-                <span class="bot-line common"></span>
-              </div>
+              <input type="checkbox" id="check-car" class="close-car-button">
+              <label for="check-car">
+                <div class="toggle-car">
+                  <span class="top-line common"></span>
+                  <span class="bot-line common"></span>
+                </div>
+              </label>
               <h2 class="title-car font-1-m1">seu carrinho</h2>
               <div class="product-card">
                 <div class="product-card-img">
@@ -100,7 +107,7 @@
                     <div class="btn">-</div>
                   </div>
                   <span class="price font-2-g1">R$ 140,00</span>
-                  <a class="font-2-g" href="/error/error.html">Remover</a>
+                  <a class="font-2-g" href="#">Remover</a>
                 </div>
               </div>
               <div class="product-card">
@@ -115,7 +122,7 @@
                     <div class="btn">-</div>
                   </div>
                   <span class="price font-2-g1">R$ 0,00</span>
-                  <a class="font-2-g" href="/error/error.html">Remover</a>
+                  <a class="font-2-g" href="#">Remover</a>
                 </div>
               </div>
 
@@ -148,7 +155,8 @@
 
                 </div>
 
-                <div class=" cep"> <input class="input-cep" type="number" placeholder="CEP">
+                <div class="cep">
+                  <input class="input-cep input-form-01" type="text" placeholder="CEP">
                   <a class="font-2-g" href="https://buscacepinter.correios.com.br/app/endereco/index.php">Não sei meu CEP</a>
                 </div>
                 <div class="total">
@@ -164,7 +172,7 @@
               </div>
             </div>
 
-          </label>
+            </label>
         </li>
       </ul>
     </nav>

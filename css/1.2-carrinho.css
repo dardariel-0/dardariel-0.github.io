@@ -127,6 +127,7 @@ input:checked ~ .slide-carrinho {
   background-color: var(--cor-04);
   top: 52px;
 }
+
 .input-cep {
   height: 44px;
   width: 100%;
@@ -134,6 +135,10 @@ input:checked ~ .slide-carrinho {
   position: relative;
   margin-bottom: 12px;
   margin-top: 28px;
+}
+.cep input {
+  width: 96.5% !important;
+  padding-left: 12px;
 }
 .slide-carrinho .button {
   margin-bottom: 32px;
@@ -189,6 +194,10 @@ input:checked ~ .slide-carrinho {
   width: 25px;
   transform: rotate(-45deg);
 }
+.close-car:checked ~ .slide-carrinho {
+  display: none;
+}
+
 @media (max-width: 480px) {
   .product-card img {
     max-width: 150px;
@@ -199,4 +208,8 @@ input:checked ~ .slide-carrinho {
   .price {
     text-align: right;
   }
+}
+
+.checkbox-0000 input {
+  display: block !important;
 }

@@ -79,6 +79,11 @@
 .parcelas .select-button {
   background-color: var(--cor-01);
   border-color: var(--cor-10);
+  border-radius: 8px;
+  border: 2px solid var(--cor-09);
+}
+.main-entrega .custom-select {
+  max-width: none;
 }
 
 .parcelas .select-dropdown input:checked ~ label {

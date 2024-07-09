@@ -214,16 +214,8 @@
     max-width: 100%;
     margin-bottom: 20px;
   }
-
-  .photos-list img {
-    border-radius: 0px;
-  }
-  .foco-img img {
-    opacity: 100%;
-  }
-  .main-photo img {
-    border-radius: 0px;
-    height: fit-content;
-    width: auto;
+  .photos img:first-of-type {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
 }
